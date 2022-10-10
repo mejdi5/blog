@@ -1,0 +1,157 @@
+.newPost-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    height: calc(100vh - 50px);
+    margin-top: 50px;
+}
+
+.error {
+    color: crimson;
+}
+
+.newPost-content {
+    background-color: #fff;
+    height: 55%;
+    width: 80%; 
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.newPost-content > input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px;
+}
+
+.editorContainer {
+    height: 80%;
+    border: 1px solid lightgray;
+}
+
+.editor {
+    height: 100%;
+    border: none;
+}
+
+.newPost-menu {
+    background-color: #fff;
+    height: 35%;
+    width: 40%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px
+}
+
+.newPost-menu-left {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.category {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.newPost-menu-right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.newPost-menu-right > input {
+    display: none;
+}
+
+.newPost-menu-right > label {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.newPost-menu-right > button {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding: 7px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.uploadProgress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.progress {
+    width: 100px;
+    border: 1px solid black;
+}
+
+.percentage {
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.postImage {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+@media (max-device-width: 380px) {
+
+    .newPost-content, .newPost-content > input, .editor {
+        font-size: 30px;
+    }
+
+    .newPost-menu {
+        width: 80%;
+        font-size: 30px;
+    }
+
+    .category > input {
+        width: 30px;
+        height: 30px
+    }
+
+    .newPost-menu-right > button {
+        font-size: 30px;
+    }
+
+    
+.newPost-menu-right > label {
+    font-size: 40px;
+}
+}
+
+::-webkit-scrollbar { 
+    width: 12px;
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+};
+

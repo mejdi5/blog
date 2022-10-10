@@ -1,0 +1,115 @@
+.navbar {
+    width: 100%;
+    background-color: lightgrey;
+    height: 50px;
+    position: fixed;
+    top:0
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.navbar-links {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-link {
+    font-size: 22px;
+    text-decoration: none;
+    color: blue
+}
+
+.userInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.userInfo > img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.userInfo > span {
+    max-width: 400px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.write {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.logout {
+    cursor: pointer;
+    text-decoration: underline;
+} 
+
+
+@media (max-device-width: 380px) {
+
+    .navbar-links {
+        width: calc(100% - 55px);
+    }
+
+    .navbar-link {
+        font-size: 27px;
+    }
+
+    .userInfo > span {
+        display: none;
+    }
+
+    .userInfo > img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logout, .login {
+        font-size: 22px;
+        height: 30px;
+        font-weight: bold;
+    }
+
+    .write {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .category-link {
+        display: none
+    }
+
+    .navbar-links {
+        justify-content: end;
+        gap: 20px
+    }
+}
+
+

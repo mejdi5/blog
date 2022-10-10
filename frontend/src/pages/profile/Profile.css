@@ -1,0 +1,182 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100vw;
+    height: calc(100vh - 50px);
+    margin-top: 50px;
+    background-color: black;
+}
+
+.profile > h2 {
+    color: white;
+}
+
+.profile-wrapper {
+    width: 50%;
+    height: 50%;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-image {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+.profile-image > input {
+    display: none
+}
+
+.profile-image > label {
+    width: 200px;
+    height: 200px;
+}
+
+.profile-image > label > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.uploadProgress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.progress {
+    width: 100px;
+    border: 1px solid black;
+}
+
+.percentage {
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    width: 50%;
+    height: 100%;
+    padding-left: 10%;
+}
+
+.profile-info > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.profile-info > div > input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    width: 80%
+}
+
+.change-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 15%;
+    font-size: 20px;
+}
+
+.error {
+    color: red
+}
+
+.delete-user {
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+
+@media (max-device-width: 380px) {
+
+    .profile {
+        gap: 50px
+    }
+
+    .profile > h2 {
+        font-size: 50px;
+    }
+
+    .profile-wrapper {
+        width: 80%;
+        height: 60%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .profile-image{
+        height: 70%;
+    }
+
+    .profile-image > label {
+        width: 400px;
+        height: 400px;
+    }
+
+    .profile-info {
+        height: 30%;
+        width: 80%;
+        padding: 0px 20px
+    }
+
+    .profile-info > div {
+        font-size: 30px;
+    }
+
+    .profile-info > div > input {
+        font-size: 30px;
+    }
+
+    .change-icons {
+        font-size: 25px;
+    }
+
+    .delete-user {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .profile-wrapper {
+        width: 70%;
+        height: 60%;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 20px
+    }
+}
