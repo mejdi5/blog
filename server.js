@@ -22,7 +22,7 @@ db.connect((err) => {
 app.use("/api/users", userRoutes);
 app.use("/api/posts", postRoutes);
 
-const port = process.env.NODE_ENV === 'development' ? 5000 : "https://blog-production-153e.up.railway.app"
+const port = 5000 
 
 app.listen(port, () => {
   console.log("server running..");
